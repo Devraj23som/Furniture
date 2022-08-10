@@ -297,7 +297,7 @@ h2{
     }
     .nametag{
         width: 100vw;
-        height: 5vh;
+        height: 10vh;
 
     }
     .namedata{
@@ -306,7 +306,7 @@ h2{
 
     }
     .names h2{
-        font-size: 45px;
+        font-size: 50px;
     }
     .product{
         left: -2%;
