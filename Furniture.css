@@ -1,0 +1,356 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: gilroy;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    height: 10vh;
+    /* background-color: aqua; */
+}
+h4{
+    cursor: pointer;
+    font-weight: 600;
+    
+    
+
+}
+.circ{
+    display: initial;
+    top: -20%;
+    right: -50%;
+    position: absolute;
+    border-radius: 50%;
+    width: 100vw;
+    height: 150vh;
+    background-color: rgb(73, 160, 124);
+
+}
+.circ h1{
+    position: absolute;
+    left: -5%;
+    top: 63%;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 39vh;
+    transform: rotate(90deg);
+    color: rgba(252, 249, 249, 0.39);
+}
+.box{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    /* background-color: red; */
+}
+.b1{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    /* backgound-color: rgb(226, 154, 60); */
+}
+.b2{
+    
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: burlywood; */
+}
+.choice{
+    margin-right: 10px;
+    position: relative;
+    border-right: 1px dashed lightseagreen;
+    /* padding: 0 5px; */
+    width: 50vw;
+    height: 60vh;
+    /* background-color: pink; */
+}
+.c1{
+    cursor: pointer;
+    width: 90%;
+    overflow: hidden;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    /* border: 3px solid lightseagreen; */
+    /* background-color: lightseagreen; */
+}
+.move{
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    transition: 0.6s;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    border: 3px solid lightseagreen;
+    /* background-color: lightseagreen; */
+}
+img{
+    width: 80%;
+    height: 90%;
+     /* object-fit: cover; */
+     object-position: center;
+}
+.nametag{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100vw;
+    height: 16%;
+    position: relative;
+    /* background-color: red; */
+}
+.names{
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+h2{
+    
+    font-size: 10vh;
+}
+.namedata{
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: row; */
+    height: 20%;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+.lines{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    position: absolute;
+    /* flex-flow: column; */
+    transition: 0.8s;
+    
+}
+.text{
+    color: rgb(201, 197, 193);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.text:nth-child(1){
+    transform: translateX(0);
+}
+.text:nth-child(2){
+    transform: translateX(-100%);
+}
+.text:nth-child(3){
+    transform: translateX(-200%);
+}
+.product{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    /* background-color: antiquewhite; */
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: drop-shadow(10px 5px 10px);
+    transition: 1s;
+
+}
+#rcousin{
+
+    z-index: 3;
+    /* opacity: 0; */
+}
+#rseat{
+    z-index: 2;
+    opacity: 0;
+}
+#rsold{
+    z-index: 1;
+    opacity: 0;
+}
+.buysection{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.colorchoice{
+
+    width: 50%;
+    height: 10%;
+}
+.price{
+    color: rgb(241, 206, 3);
+    text-align: center;
+    width: 50%;
+    height: 8%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: aqua; */
+}
+.price h3{
+    position: absolute;
+    font-size: 30px;
+}
+#p1{
+    opacity: 1;
+}
+#p2{
+    opacity: 0;
+}
+#p3{
+    opacity: 0;
+}
+.buyclic{
+    
+    width: 60%;
+    height: 15%;
+    /* background-color: teal; */
+}
+.add{
+
+    margin: 10px 0 ;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(255, 157, 44);
+
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------phone------------------------------ */
+@media only screen and (max-width:600px) {
+    #main{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    .nav{
+        width: 100vw;
+    }
+    .circ{
+        display: none;
+        top: 10%;
+        right: -15%;
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 70vw;
+        border-radius: 10px;
+        height: 50vh;
+    }
+    .circ h1{
+        font-size: 10vh;
+        left: -3%;
+        right: 0;
+        /* right:0; */
+        top: 20%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 100%;
+        /* background-color: aqua; */
+    }
+    .b1{
+        width: 40vw;
+    }
+    .c1{
+        width: 80%;
+    }
+    .b2{
+        padding-left: 10px;       display: block;
+        /* background-color: red; */
+        width: 100%;
+        height: 100vh;
+
+        
+    }
+    .nametag{
+        width: 100vw;
+        height: 10vh;
+
+    }
+    .namedata{
+        width: 90vw;
+        height: 15vh;
+
+    }
+    .names h2{
+        font-size: 48px;
+    }
+    .product{
+        left: -2%;
+        width: 60vw;
+        height: 10vh;
+    }
+    .product img{
+        width: 80vw;
+        height: 50vh;
+    }
+    .colorchoice{
+        width: 60vw;
+        height: 10vh;
+    
+        background-color: aqua;
+    }
+    .price{
+        width: 50vw;
+        height: 50vh;
+    }
+    .colorchoice{
+        display: none;
+    }
+    .buysection{
+        display: flex;
+        justify-content: ;
+    
+        /* flex-direction: column; */
+
+        /* flex-direction: column; */
+        /* display: block; */
+        width: 100vw;
+        background-color: rgb(49, 248, 9);
+        /* height: 20vh; */
+    }
+    .buyclic{
+        width: 40vw;
+        height: 60vh;
+        background-color: aqua;
+    }
+    .add{
+        width: 20vw;
+        /* margin: 10px 0; */
+        width: 30vw;
+    }
+    
+}
