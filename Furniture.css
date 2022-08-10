@@ -306,7 +306,7 @@ h2{
 
     }
     .names h2{
-        font-size: 48px;
+        font-size: 50px;
     }
     .product{
         left: -2%;
@@ -317,12 +317,7 @@ h2{
         width: 80vw;
         height: 50vh;
     }
-    .colorchoice{
-        width: 60vw;
-        height: 10vh;
-    
-        background-color: aqua;
-    }
+  
     .price{
         width: 50vw;
         height: 50vh;
@@ -339,13 +334,13 @@ h2{
         /* flex-direction: column; */
         /* display: block; */
         width: 100vw;
-        background-color: rgb(49, 248, 9);
+/*         background-color: rgb(49, 248, 9); */
         /* height: 20vh; */
     }
     .buyclic{
         width: 40vw;
         height: 60vh;
-        background-color: aqua;
+/*         background-color: aqua; */
     }
     .add{
         width: 20vw;
